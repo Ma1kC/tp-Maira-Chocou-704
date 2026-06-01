@@ -52,7 +52,6 @@ $s = $r2['s'] ? $r2['s'] : 0;
     </div>
 </header>
 
-   ```html
 <main class="hero">
 
     <p class="collection">COLECCIÓN 2026</p>
