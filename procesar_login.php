@@ -13,28 +13,28 @@ try {
     header('Location: login.php?err=1');
     exit;
 }
-
+ 
 $correo = isset($_POST['correo']) ? (string) $_POST['correo'] : '';
 $clave = isset($_POST['clave']) ? $_POST['clave'] : '';
-
+ 
 $st = $pdo->prepare('SELECT * FROM usuarios WHERE correo = ? LIMIT 1');
 $st->execute([$correo]);
 $fila = $st->fetch();
-
+ 
 $login_ok = false;
 if ($fila) {
-    $hash_guardado = $fila['password_hash'] ?? '';
+    $hash_guardado = $fila['hash_pass'] ?? '';           // ✅ corregido: era 'password_hash'
     if ($hash_guardado !== '' && password_verify($clave, $hash_guardado)) {
         $login_ok = true;
     }
 }
-
+ 
 if ($login_ok) {
     $_SESSION['user_id'] = (int) ($fila['id'] ?? 0);
-    $_SESSION['nombre_pantalla'] = $fila['nombre_usuario'] ?? '';
+    $_SESSION['nombre_pantalla'] = $fila['nombre_visible'] ?? '';   // ✅ corregido: era 'nombre_usuario'
     header('Location: panel_usuario.php');
     exit;
 }
-
+ 
 header('Location: login.php?err=1');
 exit;
