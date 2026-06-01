@@ -121,7 +121,7 @@ $total_mov        = $pdo->query('SELECT COUNT(*) FROM movimientos')->fetchColumn
     <!-- Footer -->
     <div class="panel-footer">
         <span>nuvo. inventario interno</span>
-        <a href="index.html">← Volver al inicio</a>
+        <a href="index.php">← Volver al inicio</a>
     </div>
  
 </div>
