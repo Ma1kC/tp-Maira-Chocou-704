@@ -52,42 +52,47 @@ $s = $r2['s'] ? $r2['s'] : 0;
     </div>
 </header>
 
-    <main class="hero">
+   ```html
+<main class="hero">
 
-        <p class="collection">COLECCIÓN 2026</p>
+    <p class="collection">COLECCIÓN 2026</p>
 
-        <h1>
-            Lo esencial,<br>
-            <span>bien pensado.</span>
-        </h1>
+    <h1>
+        Lo esencial,<br>
+        <span>bien pensado.</span>
+    </h1>
 
-        <p class="description">
-            Una selección curada de productos de limpieza,
-            papelería y tecnología. Diseño honesto,
-            materiales nobles, precios justos.
-        </p>
+    <p class="description">
+        Una selección curada de productos de limpieza,
+        papelería y tecnología. Diseño honesto,
+        materiales nobles, precios justos.
+    </p>
 
-        <div class="buttons">
-            <a href="ver_productos.php" class="btn-primary">
-                Explorar productos
-            </a>
+    <div class="buttons">
+        <a href="ver_productos.php" class="btn-primary">
+            Explorar productos
+        </a>
 
-            <a href="#" class="btn-secondary">
-                Cómo compramos →
-            </a>
+        <a href="#" class="btn-secondary">
+            Cómo compramos →
+        </a>
+    </div>
+
+    <div class="stats">
+        <div class="card">
+            <h3><?php echo $total; ?></h3>
+            <p>Productos</p>
         </div>
 
-        <div class="stats">
-            <div class="card">
-                <h3><?php echo $total; ?></h3>
-                <p>Productos</p>
-            </div>
-
-            <div class="card">
-                <h3><?php echo $s; ?></h3>
-                <p>Stock total</p>
-            </div>
+        <div class="card">
+            <h3><?php echo $s; ?></h3>
+            <p>Stock total</p>
         </div>
+    </div>
+
+</main> 
+
+```html
 <section class="catalog-section cleaning" id="limpieza">
 
     <div class="category-image">
@@ -100,9 +105,8 @@ $s = $r2['s'] ? $r2['s'] : 0;
         <h2>Limpieza</h2>
 
         <p>
-            Selección curada de productos pensados
-            para tu día a día. Calidad y diseño en
-            cada detalle.
+            Selección curada de productos pensados para tu día a día.
+            Calidad y diseño en cada detalle.
         </p>
 
         <div class="product-grid">
@@ -156,22 +160,21 @@ $s = $r2['s'] ? $r2['s'] : 0;
 </section>
 
 
-<section class="catalog-section stationery reverse" id="papeleria">
+<section class="catalog-section stationery" id="papeleria">
 
     <div class="category-products">
 
         <h2>Papelería</h2>
 
         <p>
-            Selección curada de productos pensados
-            para tu día a día. Calidad y diseño en
-            cada detalle.
+            Selección curada de productos pensados para tu día a día.
+            Calidad y diseño en cada detalle.
         </p>
 
         <div class="product-grid">
 
             <div class="product-card">
-                <img src="img/p-notebook.jpg">
+                <img src="img/p-notebook.jpg" alt="">
                 <div class="product-info">
                     <div>
                         <h4>Cuaderno Lila</h4>
@@ -182,7 +185,7 @@ $s = $r2['s'] ? $r2['s'] : 0;
             </div>
 
             <div class="product-card">
-                <img src="img/p-pens.jpg">
+                <img src="img/p-pens.jpg" alt="">
                 <div class="product-info">
                     <div>
                         <h4>Set de Bolígrafos</h4>
@@ -193,7 +196,7 @@ $s = $r2['s'] ? $r2['s'] : 0;
             </div>
 
             <div class="product-card">
-                <img src="img/p-markers.jpg">
+                <img src="img/p-markers.jpg" alt="">
                 <div class="product-info">
                     <div>
                         <h4>Marcadores Pastel</h4>
@@ -204,7 +207,7 @@ $s = $r2['s'] ? $r2['s'] : 0;
             </div>
 
             <div class="product-card">
-                <img src="img/p-agenda.jpg">
+                <img src="img/p-agenda.jpg" alt="">
                 <div class="product-info">
                     <div>
                         <h4>Agenda 2026</h4>
@@ -219,8 +222,9 @@ $s = $r2['s'] ? $r2['s'] : 0;
 
     <div class="category-image">
         <span class="badge">✎ ESCRIBIR, ANOTAR, CREAR</span>
-        <img src="img/cat-stationery.jpg">
+        <img src="img/cat-stationery.jpg" alt="">
     </div>
+
 </section>
 
 
@@ -228,7 +232,7 @@ $s = $r2['s'] ? $r2['s'] : 0;
 
     <div class="category-image">
         <span class="badge">⚙ HERRAMIENTAS DEL DÍA A DÍA</span>
-        <img src="img/cat-tech.jpg">
+        <img src="img/cat-tech.jpg" alt="">
     </div>
 
     <div class="category-products">
@@ -236,15 +240,14 @@ $s = $r2['s'] ? $r2['s'] : 0;
         <h2>Tecnología</h2>
 
         <p>
-            Selección curada de productos pensados
-            para tu día a día. Calidad y diseño en
-            cada detalle.
+            Selección curada de productos pensados para tu día a día.
+            Calidad y diseño en cada detalle.
         </p>
 
         <div class="product-grid">
 
             <div class="product-card">
-                <img src="img/p-earbuds.jpg">
+                <img src="img/p-earbuds.jpg" alt="">
                 <div class="product-info">
                     <div>
                         <h4>Auriculares Mini</h4>
@@ -255,7 +258,7 @@ $s = $r2['s'] ? $r2['s'] : 0;
             </div>
 
             <div class="product-card">
-                <img src="img/p-keyboard.jpg">
+                <img src="img/p-keyboard.jpg" alt="">
                 <div class="product-info">
                     <div>
                         <h4>Teclado Compacto</h4>
@@ -266,7 +269,7 @@ $s = $r2['s'] ? $r2['s'] : 0;
             </div>
 
             <div class="product-card">
-                <img src="img/p-mouse.jpg">
+                <img src="img/p-mouse.jpg" alt="">
                 <div class="product-info">
                     <div>
                         <h4>Mouse inalámbrico</h4>
@@ -277,7 +280,7 @@ $s = $r2['s'] ? $r2['s'] : 0;
             </div>
 
             <div class="product-card">
-                <img src="img/p-charger.jpg">
+                <img src="img/p-charger.jpg" alt="">
                 <div class="product-info">
                     <div>
                         <h4>Cargador 30W</h4>
@@ -290,7 +293,6 @@ $s = $r2['s'] ? $r2['s'] : 0;
         </div>
     </div>
 </section>
-    </main>
 
 </body>
 </html>
