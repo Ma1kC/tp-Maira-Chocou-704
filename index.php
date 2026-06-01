@@ -331,6 +331,81 @@ document.addEventListener('click', function(e) {
         </div>
     </div>
 </section>
- 
+
+<!-- ==============================
+     NEWSLETTER
+============================== -->
+<section class="newsletter">
+    <p class="newsletter-eyebrow">Mantenete al día</p>
+    <h2 class="newsletter-title">Novedades, sin ruido.</h2>
+    <p class="newsletter-sub">Un correo al mes con lanzamientos y descuentos.</p>
+    <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+        <input type="email" name="email" placeholder="tu@correo.com" required>
+        <button type="submit">Suscribirme</button>
+    </form>
+    <p class="newsletter-confirm" id="newsletterConfirm">¡Gracias! Te sumamos a la lista ✓</p>
+</section>
+
+<!-- ==============================
+     FOOTER
+============================== -->
+<footer class="site-footer">
+    <div class="footer-inner">
+
+        <!-- Columna marca -->
+        <div class="footer-brand">
+            <span class="footer-logo">nuvo.</span>
+            <p class="footer-tagline">Comercio minimalista para una vida más simple.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Twitter / X">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L2.25 2.25h6.865l4.26 5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Columna Tienda -->
+        <div class="footer-col">
+            <h4>Tienda</h4>
+            <a href="#limpieza">Limpieza</a>
+            <a href="#papeleria">Papelería</a>
+            <a href="#tecnologia">Tecnología</a>
+        </div>
+
+        <!-- Columna Ayuda -->
+        <div class="footer-col">
+            <h4>Ayuda</h4>
+            <a href="#">Envíos</a>
+            <a href="#">Devoluciones</a>
+            <a href="#">Contacto</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2026 Nuvo. Hecho con cuidado.</span>
+    </div>
+</footer>
+
+<script>
+function handleNewsletter(e) {
+    e.preventDefault();
+    document.getElementById('newsletterConfirm').style.display = 'block';
+    e.target.reset();
+}
+</script>
+
 </body>
 </html>
