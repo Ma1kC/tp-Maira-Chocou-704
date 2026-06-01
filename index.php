@@ -91,7 +91,7 @@ $s = $r2['s'] ? $r2['s'] : 0;
 
 </main> 
 
-```html
+
 <section class="catalog-section cleaning" id="limpieza">
 
     <div class="category-image">
@@ -195,7 +195,7 @@ $s = $r2['s'] ? $r2['s'] : 0;
             </div>
 
             <div class="product-card">
-                <img src="img/p-markers.jpg" alt="">
+                <img src="img/p-markes.jpg" alt="">
                 <div class="product-info">
                     <div>
                         <h4>Marcadores Pastel</h4>
